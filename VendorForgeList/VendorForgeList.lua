@@ -1229,8 +1229,8 @@ init:SetScript("OnEvent", function(_, event, addonName)
         print("|cff33ff99[".. ADDON_NAME .."]|r: Loaded.")
     elseif event == "PLAYER_LOGIN" then
 		InitDB()
-        CreateListFrame()
         ForceCacheAllItems()
+        CreateListFrame()
         if VFL_Frame then if VFL_Frame.SyncOptionsUIFromDB then VFL_Frame.SyncOptionsUIFromDB() end; VFL_Frame:Hide() end
     elseif event == "GET_ITEM_INFO_RECEIVED" then
         -- When an item finishes loading, refresh visible rows
