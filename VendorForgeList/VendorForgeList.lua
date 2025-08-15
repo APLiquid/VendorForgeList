@@ -991,8 +991,6 @@ local function CreateListFrame()
         if VFL_UpdateList then VFL_UpdateList() end
     end)
 	
-	
-	
     -- Helper: collect all currency names seen across items
     local function CollectCurrencyNames()
         local set = {}
@@ -1191,7 +1189,6 @@ end
 ------------------------------------------------------------
 SLASH_VENDORFORGELIST1 = "/vfl"
 SlashCmdList["VENDORFORGELIST"] = function(msg)
-    CreateListFrame()
     if VFL_Frame:IsShown() then
         VFL_Frame:Hide()
     else
