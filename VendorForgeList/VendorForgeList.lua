@@ -614,7 +614,7 @@ local function GetEntryLink(entry)
     end
 end
 
-function AddSeparators(n)
+local function AddSeparators(n)
     local str = tostring(n)
     local sign, int, frac = string.match(str, "([%+%-]?)(%d+)(%.?%d*)")
 
@@ -629,7 +629,7 @@ function AddSeparators(n)
     return sign .. int .. frac
 end
 
-function BuildCurrencyArray(item)
+local function BuildCurrencyArray(item)
     local currencies = {}
     local prestigeForgePower = GetCustomGameData(29, 1494) / 100
     local forgeMult = {
@@ -991,6 +991,8 @@ local function CreateListFrame()
         if VFL_UpdateList then VFL_UpdateList() end
     end)
 	
+	
+	
     -- Helper: collect all currency names seen across items
     local function CollectCurrencyNames()
         local set = {}
@@ -1189,6 +1191,7 @@ end
 ------------------------------------------------------------
 SLASH_VENDORFORGELIST1 = "/vfl"
 SlashCmdList["VENDORFORGELIST"] = function(msg)
+
     if VFL_Frame:IsShown() then
         VFL_Frame:Hide()
     else
