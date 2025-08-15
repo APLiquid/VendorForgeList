@@ -1,0 +1,7 @@
+## Interface: 30400
+## Title: VendorForgeList
+## Notes: Shows a scrollable list of precompiled attunable vendor items and prices with /vfl
+## Author: LiquidAP
+## Version: 1.0.0
+## SavedVariables: VendorForgeListDB
+VendorForgeList.lua
