@@ -625,7 +625,6 @@ local function FilterList(items)
         local currencies = BuildCurrencyArray(item)
         for _, cur in ipairs(currencies) do
             local th = VendorForgeListDB and VendorForgeListDB.thresholds and VendorForgeListDB.thresholds[VendorForgeListDB.targetForge+1] and VendorForgeListDB.thresholds[VendorForgeListDB.targetForge+1][cur.name]
-            print(th)
 			if th and tonumber(th) and cur.amnt > tonumber(th) then
                 ok = false
                 break
