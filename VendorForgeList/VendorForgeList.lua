@@ -541,6 +541,77 @@ local function GetTitle(got,left)
 	end
 end
 
+local function BuildCurrencyArray(item)
+    local currencies = {}
+    local prestigeForgePower = GetCustomGameData(29, 1494) / 100
+    local forgeMult = {
+		1,
+        1 / ((1 + prestigeForgePower) * 0.05),
+        1 / ((1 + prestigeForgePower) * 0.007),
+        1 / ((1 + prestigeForgePower) * 0.001),
+    }
+    local mult = math.max(1,forgeMult[VendorForgeListDB.targetForge+1])
+    
+    if(item.copper ~= nil and item.copper > 0) then
+		local _, _, _, _, _, _, _, _, _, _, vendorPrice = GetItemInfo(item.itemID)
+        local copper = (item.copper-vendorPrice) * mult
+        --local gold = math.floor(copper / 10000)
+		--if(gold > 0) then
+		local gold = math.floor((copper / 10000) +0.5)
+		local silver = math.floor((copper / 100) +0.5) % 100
+		copper = copper % 100
+        copper = math.floor(copper + 0.5)
+        if(gold) then
+            table.insert(currencies, {
+                ['name'] = 'Gold',
+                ['icon'] = 'Interface/MoneyFrame/UI-GoldIcon',
+                ['amnt'] = gold
+            })
+		end
+		if (gold == 0) then
+			if(silver > 0) then
+				table.insert(currencies, {
+					['name'] = 'Silver',
+					['icon'] = 'Interface/MoneyFrame/UI-SilverIcon',
+					['amnt'] = silver
+				})
+			elseif(copper > 0) then
+				table.insert(currencies, {
+					['name'] = 'Copper',
+					['icon'] = 'Interface/MoneyFrame/UI-CopperIcon',
+					['amnt'] = copper
+				})
+			end
+		end
+    end
+    
+        
+    if(item.honorPoints > 0) then
+        if(honorIcon == nil) then
+            if(UnitFactionGroup('player') == 'Alliance') then
+                honorIcon = 'Interface/PVPFrame/PVP-Currency-Alliance'
+            else
+                honorIcon = 'Interface/PVPFrame/PVP-Currency-Horde'
+            end
+        end
+        table.insert(currencies, {
+            ['name'] = 'Honor Points',
+            ['icon'] = honorIcon,
+            ['amnt'] = math.floor((item.honorPoints * mult) + 0.5)
+        })
+    end
+    if(item.arenaPoints > 0) then
+        table.insert(currencies, {
+            ['name'] = 'Arena Points',
+            ['icon'] = 'Interface/PVPFrame/PVP-ArenaPoints-Icon',
+            ['amnt'] = math.floor((item.arenaPoints * mult) + 0.5)
+        })
+    end
+
+    
+    return currencies
+end
+
 
 -- Filter function
 
@@ -554,7 +625,8 @@ local function FilterList(items)
         local currencies = BuildCurrencyArray(item)
         for _, cur in ipairs(currencies) do
             local th = VendorForgeListDB and VendorForgeListDB.thresholds and VendorForgeListDB.thresholds[VendorForgeListDB.targetForge+1] and VendorForgeListDB.thresholds[VendorForgeListDB.targetForge+1][cur.name]
-            if th and tonumber(th) and cur.amnt > tonumber(th) then
+            print(th)
+			if th and tonumber(th) and cur.amnt > tonumber(th) then
                 ok = false
                 break
             end
@@ -629,76 +701,7 @@ local function AddSeparators(n)
     return sign .. int .. frac
 end
 
-local function BuildCurrencyArray(item)
-    local currencies = {}
-    local prestigeForgePower = GetCustomGameData(29, 1494) / 100
-    local forgeMult = {
-		1,
-        1 / ((1 + prestigeForgePower) * 0.05),
-        1 / ((1 + prestigeForgePower) * 0.007),
-        1 / ((1 + prestigeForgePower) * 0.001),
-    }
-    local mult = math.max(1,forgeMult[VendorForgeListDB.targetForge+1])
-    
-    if(item.copper ~= nil and item.copper > 0) then
-		local _, _, _, _, _, _, _, _, _, _, vendorPrice = GetItemInfo(item.itemID)
-        local copper = (item.copper-vendorPrice) * mult
-        --local gold = math.floor(copper / 10000)
-		--if(gold > 0) then
-		local gold = math.floor((copper / 10000) +0.5)
-		local silver = math.floor((copper / 100) +0.5) % 100
-		copper = copper % 100
-        copper = math.floor(copper + 0.5)
-        if(gold) then
-            table.insert(currencies, {
-                ['name'] = 'Gold',
-                ['icon'] = 'Interface/MoneyFrame/UI-GoldIcon',
-                ['amnt'] = gold
-            })
-		end
-		if (gold == 0) then
-			if(silver > 0) then
-				table.insert(currencies, {
-					['name'] = 'Silver',
-					['icon'] = 'Interface/MoneyFrame/UI-SilverIcon',
-					['amnt'] = silver
-				})
-			elseif(copper > 0) then
-				table.insert(currencies, {
-					['name'] = 'Copper',
-					['icon'] = 'Interface/MoneyFrame/UI-CopperIcon',
-					['amnt'] = copper
-				})
-			end
-		end
-    end
-    
-        
-    if(item.honorPoints > 0) then
-        if(honorIcon == nil) then
-            if(UnitFactionGroup('player') == 'Alliance') then
-                honorIcon = 'Interface/PVPFrame/PVP-Currency-Alliance'
-            else
-                honorIcon = 'Interface/PVPFrame/PVP-Currency-Horde'
-            end
-        end
-        table.insert(currencies, {
-            ['name'] = 'Honor Points',
-            ['icon'] = honorIcon,
-            ['amnt'] = math.floor((item.honorPoints * mult) + 0.5)
-        })
-    end
-    if(item.arenaPoints > 0) then
-        table.insert(currencies, {
-            ['name'] = 'Arena Points',
-            ['icon'] = 'Interface/PVPFrame/PVP-ArenaPoints-Icon',
-            ['amnt'] = math.floor((item.arenaPoints * mult) + 0.5)
-        })
-    end
 
-    
-    return currencies
-end
 
 ------------------------------------------------------------
 -- 3) UI
