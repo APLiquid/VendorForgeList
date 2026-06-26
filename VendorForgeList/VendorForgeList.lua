@@ -407,6 +407,341 @@ local VFLIST_ITEMS = {
 	{ itemID = 19573, copper = 0,         honorPoints = 700,           arenaPoints = 0},   -- Lorekeeper's Staff
 	{ itemID = 19568, copper = 0,         honorPoints = 1000,          arenaPoints = 0},   -- Advisor's Gnarled Staff
 	{ itemID = 19572, copper = 0,         honorPoints = 1000,          arenaPoints = 0},   -- Lorekeeper's Staff
+	{ itemID = 19518, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Advisor's Ring
+	{ itemID = 19526, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Battle Healer's Cloak
+	{ itemID = 19530, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Caretaker's Cape
+	{ itemID = 18434, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- First Sergeant's Dragonhide Armguards
+	{ itemID = 16497, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- First Sergeant's Leather Armguards
+	{ itemID = 16532, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- First Sergeant's Mail Wristguards
+	{ itemID = 18429, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- First Sergeant's Plate Bracers
+	{ itemID = 16486, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- First Sergeant's Silk Cuffs
+	{ itemID = 19085, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Frostwolf Advisor's Cloak
+	{ itemID = 19096, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Frostwolf Advisor's Pendant
+	{ itemID = 19083, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Frostwolf Legionnaire's Cloak
+	{ itemID = 19095, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Frostwolf Legionnaire's Pendant
+	{ itemID = 19510, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Legionnaire's Band
+	{ itemID = 19522, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Lorekeeper's Ring
+	{ itemID = 18443, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Master Sergeant's Insignia
+	{ itemID = 19514, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Protector's Band
+	{ itemID = 19534, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Scout's Medallion
+	{ itemID = 16335, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Senior Sergeant's Insignia
+	{ itemID = 16342, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Sergeant's Cape
+	{ itemID = 18461, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Sergeant's Cloak
+	{ itemID = 18452, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Sergeant Major's Chain Armguards
+	{ itemID = 18454, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Sergeant Major's Dragonhide Armsplints
+	{ itemID = 18452, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Sergeant Major's Leather Armsplints
+	{ itemID = 18445, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Sergeant Major's Plate Wristguards
+	{ itemID = 18456, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Sergeant Major's Silk Cuffs
+	{ itemID = 19538, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Sentinel's Medallion
+	{ itemID = 19086, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Stormpike Sage's Cloak
+	{ itemID = 19098, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Stormpike Sage's Pendant
+	{ itemID = 19084, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Stormpike Soldier's Cloak
+	{ itemID = 19097, copper = 0,         honorPoints = 1600,           arenaPoints = 0},   -- Stormpike Soldier's Pendant
+	{ itemID = 19100, copper = 0,         honorPoints = 2400,           arenaPoints = 0},   -- Electrified Dagger
+	{ itemID = 19103, copper = 0,         honorPoints = 2400,           arenaPoints = 0},   -- Frostbite
+	{ itemID = 19099, copper = 0,         honorPoints = 2400,           arenaPoints = 0},   -- Glacial Blade
+	{ itemID = 19104, copper = 0,         honorPoints = 2400,           arenaPoints = 0},   -- Stormstrike Hammer
+	{ itemID = 18849, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Horde
+	{ itemID = 18834, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Horde
+	{ itemID = 29592, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Horde
+	{ itemID = 18845, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Horde
+	{ itemID = 18853, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Horde
+	{ itemID = 18852, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Horde
+	{ itemID = 18851, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Horde
+	{ itemID = 18850, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Horde
+	{ itemID = 18846, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Horde
+	{ itemID = 18863, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Alliance
+	{ itemID = 29593, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Alliance
+	{ itemID = 18854, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Alliance
+	{ itemID = 18856, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Alliance
+	{ itemID = 18857, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Alliance
+	{ itemID = 18859, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Alliance
+	{ itemID = 18864, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Alliance
+	{ itemID = 18862, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Alliance
+	{ itemID = 18858, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Insignia of the Alliance
+	{ itemID = 38588, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Medallion of the Horde
+	{ itemID = 30346, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Medallion of the Horde
+	{ itemID = 30345, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Medallion of the Horde
+	{ itemID = 30344, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Medallion of the Horde
+	{ itemID = 28243, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Medallion of the Horde
+	{ itemID = 30343, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Medallion of the Horde
+	{ itemID = 28242, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Medallion of the Horde
+	{ itemID = 28241, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Medallion of the Horde
+	{ itemID = 28240, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Medallion of the Horde
+	{ itemID = 28239, copper = 0,         honorPoints = 2805,           arenaPoints = 0},   -- Medallion of the Horde
+	{ itemID = 22843, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Chain Greaves
+	{ itemID = 22862, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Chain Vices
+	{ itemID = 22863, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Dragonhide Grips
+	{ itemID = 22852, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Dragonhide Treads
+	{ itemID = 22865, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Dreadweave Handwraps
+	{ itemID = 22855, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Dreadweave Walkers
+	{ itemID = 29600, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Lamellar Gauntlets
+	{ itemID = 29601, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Lamellar Sabatons
+	{ itemID = 22864, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Leather Grips
+	{ itemID = 22856, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Leather Walkers
+	{ itemID = 22867, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Mail Vices
+	{ itemID = 22857, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Mail Greaves
+	{ itemID = 22868, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Plate Gauntlets
+	{ itemID = 22858, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Plate Greaves
+	{ itemID = 22869, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Satin Handwraps
+	{ itemID = 22859, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Satin Walkers
+	{ itemID = 22870, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Silk Handwraps
+	{ itemID = 22860, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Blood Guard's Silk Walkers
+	{ itemID = 23252, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Champion's Chain Shoulders
+	{ itemID = 23254, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Champion's Dragonhide Shoulders
+	{ itemID = 23256, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Champion's Dreadweave Spaulders
+	{ itemID = 29605, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Champion's Lamellar Shoulders
+	{ itemID = 23258, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Champion's Leather Shoulders
+	{ itemID = 23260, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Champion's Mail Pauldrons
+	{ itemID = 23243, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Champion's Plate Shoulders
+	{ itemID = 23262, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Champion's Satin Mantle
+	{ itemID = 23264, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Champion's Silk Mantle
+	{ itemID = 19102, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Crackling Staff
+	{ itemID = 20154, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Defiler's Chain Greaves
+	{ itemID = 20150, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Defiler's Chain Girdle
+	{ itemID = 20159, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Defiler's Cloth Boots
+	{ itemID = 20163, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Defiler's Cloth Girdle
+	{ itemID = 20177, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Defiler's Lamellar Girdle
+	{ itemID = 20181, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Defiler's Lamellar Greaves
+	{ itemID = 20186, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Defiler's Leather Boots
+	{ itemID = 20190, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Defiler's Leather Girdle
+	{ itemID = 20167, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Defiler's Lizardhide Boots
+	{ itemID = 20171, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Defiler's Lizardhide Girdle
+	{ itemID = 20199, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Defiler's Mail Greaves
+	{ itemID = 20195, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Defiler's Mail Girdle
+	{ itemID = 20208, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Defiler's Plate Greaves
+	{ itemID = 20204, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Defiler's Plate Girdle
+	{ itemID = 19090, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Frostwolf Cloth Belt
+	{ itemID = 19089, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Frostwolf Leather Belt
+	{ itemID = 19088, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Frostwolf Mail Belt
+	{ itemID = 19087, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Frostwolf Plate Belt
+	{ itemID = 20050, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Highlander's Chain Greaves
+	{ itemID = 20043, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Highlander's Chain Girdle
+	{ itemID = 20054, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Highlander's Cloth Boots
+	{ itemID = 20047, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Highlander's Cloth Girdle
+	{ itemID = 20049, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Highlander's Lamellar Greaves
+	{ itemID = 20042, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Highlander's Lamellar Girdle
+	{ itemID = 20052, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Highlander's Leather Boots
+	{ itemID = 20045, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Highlander's Leather Girdle
+	{ itemID = 20053, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Highlander's Lizardhide Boots
+	{ itemID = 20046, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Highlander's Lizardhide Girdle
+	{ itemID = 20051, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Highlander's Mail Greaves
+	{ itemID = 20044, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Highlander's Mail Girdle
+	{ itemID = 20048, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Highlander's Plate Greaves
+	{ itemID = 20041, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Highlander's Plate Girdle
+	{ itemID = 23278, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Chain Greaves
+	{ itemID = 23279, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Chain Vices
+	{ itemID = 23280, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Dragonhide Grips
+	{ itemID = 23281, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Dragonhide Treads
+	{ itemID = 23282, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Dreadweave Handwraps
+	{ itemID = 23283, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Dreadweave Walkers
+	{ itemID = 23274, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Lamellar Gauntlets
+	{ itemID = 23275, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Lamellar Sabatons
+	{ itemID = 23284, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Leather Grips
+	{ itemID = 23285, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Leather Walkers
+	{ itemID = 29594, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Mail Greaves
+	{ itemID = 29595, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Mail Vices
+	{ itemID = 23286, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Plate Gauntlets
+	{ itemID = 23287, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Plate Greaves
+	{ itemID = 23288, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Satin Handwraps
+	{ itemID = 23289, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Satin Walkers
+	{ itemID = 23290, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Silk Handwraps
+	{ itemID = 23291, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Knight-Lieutenant's Silk Walkers
+	{ itemID = 23307, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Lieutenant Commander's Chain Shoulders
+	{ itemID = 23309, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Lieutenant Commander's Dragonhide Shoulders
+	{ itemID = 23311, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Lieutenant Commander's Dreadweave Spaulders
+	{ itemID = 23277, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Lieutenant Commander's Lamellar Shoulders
+	{ itemID = 23313, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Lieutenant Commander's Leather Shoulders
+	{ itemID = 29599, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Lieutenant Commander's Mail Pauldrons
+	{ itemID = 23315, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Lieutenant Commander's Plate Shoulders
+	{ itemID = 23317, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Lieutenant Commander's Satin Mantle
+	{ itemID = 23319, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Lieutenant Commander's Silk Mantle
+	{ itemID = 19094, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Stormpike Cloth Girdle
+	{ itemID = 19093, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Stormpike Leather Girdle
+	{ itemID = 19092, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Stormpike Mail Girdle
+	{ itemID = 19091, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Stormpike Plate Girdle
+	{ itemID = 19101, copper = 0,         honorPoints = 3000,           arenaPoints = 0},   -- Whiteout Staff
+	{ itemID = 19567, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Advisor's Gnarled Staff
+	{ itemID = 19578, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Berserker Bracers
+	{ itemID = 23292, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Chain Hauberk
+	{ itemID = 23293, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Chain Legguards
+	{ itemID = 23294, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Dragonhide Chestpiece
+	{ itemID = 23295, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Dragonhide Leggings
+	{ itemID = 23296, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Dreadweave Legguards
+	{ itemID = 23297, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Dreadweave Tunic
+	{ itemID = 23272, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Lamellar Breastplate
+	{ itemID = 23273, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Lamellar Leggings
+	{ itemID = 23298, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Leather Chestpiece
+	{ itemID = 23299, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Leather Legguards
+	{ itemID = 29596, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Mail Hauberk
+	{ itemID = 29597, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Mail Legguards
+	{ itemID = 23300, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Plate Hauberk
+	{ itemID = 23301, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Plate Leggings
+	{ itemID = 23302, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Satin Legguards
+	{ itemID = 23303, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Satin Tunic
+	{ itemID = 23304, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Silk Legguards
+	{ itemID = 23305, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Knight-Captain's Silk Tunic
+	{ itemID = 19312, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Lei of the Lifegiver
+	{ itemID = 22874, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Chain Hauberk
+	{ itemID = 22875, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Chain Legguards
+	{ itemID = 22877, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Dragonhide Chestpiece
+	{ itemID = 22878, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Dragonhide Leggings
+	{ itemID = 22881, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Dreadweave Legguards
+	{ itemID = 22884, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Dreadweave Tunic
+	{ itemID = 29602, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Lamellar Breastplate
+	{ itemID = 29603, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Lamellar Leggings
+	{ itemID = 22879, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Leather Chestpiece
+	{ itemID = 22880, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Leather Legguards
+	{ itemID = 22876, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Mail Hauberk
+	{ itemID = 22887, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Mail Legguards
+	{ itemID = 22872, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Plate Hauberk
+	{ itemID = 22873, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Plate Leggings
+	{ itemID = 22882, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Satin Legguards
+	{ itemID = 22885, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Satin Tunic
+	{ itemID = 22883, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Silk Legguards
+	{ itemID = 22886, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Legionnaire's Silk Tunic
+	{ itemID = 23306, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Lieutenant Commander's Chain Helm
+	{ itemID = 23308, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Lieutenant Commander's Dragonhide Headguard
+	{ itemID = 23310, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Lieutenant Commander's Dreadweave Cowl
+	{ itemID = 23276, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Lieutenant Commander's Lamellar Headguard
+	{ itemID = 23312, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Lieutenant Commander's Leather Helm
+	{ itemID = 29598, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Lieutenant Commander's Mail Headguard
+	{ itemID = 23314, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Lieutenant Commander's Plate Helmet
+	{ itemID = 23316, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Lieutenant Commander's Satin Hood
+	{ itemID = 23318, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Lieutenant Commander's Silk Cowl
+	{ itemID = 19571, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Lorekeeper's Staff
+	{ itemID = 19321, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- The Immovable Object
+	{ itemID = 19323, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- The Unstoppable Force
+	{ itemID = 19315, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Therazane's Touch
+	{ itemID = 19324, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- The Lobotomizer
+	{ itemID = 19308, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Tome of Arcane Domination
+	{ itemID = 19311, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Tome of Fiery Arcana
+	{ itemID = 19310, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Tome of the Ice Lord
+	{ itemID = 19309, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Tome of Shadow Force
+	{ itemID = 19595, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Dryad's Wrist Bindings
+	{ itemID = 19587, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Forest Stalker's Bracers
+	{ itemID = 20073, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Cloak of the Honor Guard
+	{ itemID = 20068, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Deathguard's Cloak
+	{ itemID = 21563, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Don Julio's Band
+	{ itemID = 19325, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Don Rodrigo's Band
+	{ itemID = 23244, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Champion's Plate Helm
+	{ itemID = 23251, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Champion's Chain Helm
+	{ itemID = 23253, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Champion's Dragonhide Headguard
+	{ itemID = 23255, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Champion's Dreadweave Cowl
+	{ itemID = 29604, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Champion's Lamellar Headguard
+	{ itemID = 23257, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Champion's Leather Helm
+	{ itemID = 23259, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Champion's Mail Headguard
+	{ itemID = 23261, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Champion's Satin Hood
+	{ itemID = 23263, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Champion's Silk Cowl
+	{ itemID = 19582, copper = 0,         honorPoints = 5000,           arenaPoints = 0},   -- Windtalker's Wristguards
+	{ itemID = 19558, copper = 0,         honorPoints = 6000,           arenaPoints = 0},   -- Outrider's Bow
+	{ itemID = 19562, copper = 0,         honorPoints = 6000,           arenaPoints = 0},   -- Outrunner's Bow
+	{ itemID = 19554, copper = 0,         honorPoints = 6000,           arenaPoints = 0},   -- Protector's Sword
+	{ itemID = 19546, copper = 0,         honorPoints = 6000,           arenaPoints = 0},   -- Sentinel's Blade
+	{ itemID = 19542, copper = 0,         honorPoints = 6000,           arenaPoints = 0},   -- Scout's Blade
+	{ itemID = 28238, copper = 0,         honorPoints = 8000,           arenaPoints = 0},   -- Medallion of the Alliance
+	{ itemID = 28237, copper = 0,         honorPoints = 8000,           arenaPoints = 0},   -- Medallion of the Alliance
+	{ itemID = 28236, copper = 0,         honorPoints = 8000,           arenaPoints = 0},   -- Medallion of the Alliance
+	{ itemID = 28235, copper = 0,         honorPoints = 8000,           arenaPoints = 0},   -- Medallion of the Alliance
+	{ itemID = 28234, copper = 0,         honorPoints = 8000,           arenaPoints = 0},   -- Medallion of the Alliance
+	{ itemID = 30348, copper = 0,         honorPoints = 8000,           arenaPoints = 0},   -- Medallion of the Alliance
+	{ itemID = 30349, copper = 0,         honorPoints = 8000,           arenaPoints = 0},   -- Medallion of the Alliance
+	{ itemID = 30350, copper = 0,         honorPoints = 8000,           arenaPoints = 0},   -- Medallion of the Alliance
+	{ itemID = 30351, copper = 0,         honorPoints = 8000,           arenaPoints = 0},   -- Medallion of the Alliance
+	{ itemID = 38589, copper = 0,         honorPoints = 8000,           arenaPoints = 0},   -- Medallion of the Alliance
+	{ itemID = 28379, copper = 0,         honorPoints = 8000,           arenaPoints = 0},   -- Sergeant's Heavy Cape
+	{ itemID = 28380, copper = 0,         honorPoints = 8000,           arenaPoints = 0},   -- Sergeant's Heavy Cloak
+	{ itemID = 20158, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Defiler's Chain Pauldrons
+	{ itemID = 20176, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Defiler's Epaulets
+	{ itemID = 20184, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Defiler's Lamellar Spaulders
+	{ itemID = 20194, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Defiler's Leather Shoulders
+	{ itemID = 20175, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Defiler's Lizardhide Shoulders
+	{ itemID = 20203, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Defiler's Mail Pauldrons
+	{ itemID = 20212, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Defiler's Plate Spaulders
+	{ itemID = 16468, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Field Marshal's Chain Spaulders
+	{ itemID = 17580, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Field Marshal's Dreadweave Shoulders
+	{ itemID = 16449, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Field Marshal's Dragonhide Spaulders
+	{ itemID = 16476, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Field Marshal's Lamellar Pauldrons
+	{ itemID = 16457, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Field Marshal's Leather Epaulets
+	{ itemID = 29611, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Field Marshal's Mail Spaulders
+	{ itemID = 16480, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Field Marshal's Plate Shoulderguards
+	{ itemID = 17604, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Field Marshal's Satin Mantle
+	{ itemID = 16444, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Field Marshal's Silk Spaulders
+	{ itemID = 16569, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Chain Boots
+	{ itemID = 16571, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Chain Gloves
+	{ itemID = 17586, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Dreadweave Boots
+	{ itemID = 17588, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Dreadweave Gloves
+	{ itemID = 16554, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Dragonhide Boots
+	{ itemID = 16555, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Dragonhide Gloves
+	{ itemID = 29612, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Lamellar Boots
+	{ itemID = 29613, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Lamellar Gloves
+	{ itemID = 16558, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Leather Treads
+	{ itemID = 16560, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Leather Mitts
+	{ itemID = 16573, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Mail Boots
+	{ itemID = 16574, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Mail Gauntlets
+	{ itemID = 16545, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Plate Boots
+	{ itemID = 16548, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Plate Gauntlets
+	{ itemID = 17618, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Satin Boots
+	{ itemID = 17620, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Satin Gloves
+	{ itemID = 16539, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Silk Boots
+	{ itemID = 16540, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- General's Silk Handguards
+	{ itemID = 20055, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Highlander's Chain Pauldrons
+	{ itemID = 20061, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Highlander's Epaulets
+	{ itemID = 20058, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Highlander's Lamellar Spaulders
+	{ itemID = 20059, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Highlander's Leather Shoulders
+	{ itemID = 20060, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Highlander's Lizardhide Shoulders
+	{ itemID = 20056, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Highlander's Mail Pauldrons
+	{ itemID = 20057, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Highlander's Plate Spaulders
+	{ itemID = 16462, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Chain Boots
+	{ itemID = 16463, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Chain Grips
+	{ itemID = 17583, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Dreadweave Boots
+	{ itemID = 17584, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Dreadweave Gloves
+	{ itemID = 16459, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Dragonhide Boots
+	{ itemID = 16448, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Dragonhide Gauntlets
+	{ itemID = 16471, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Lamellar Gloves
+	{ itemID = 16472, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Lamellar Boots
+	{ itemID = 16446, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Leather Footguards
+	{ itemID = 16454, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Leather Handgrips
+	{ itemID = 29606, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Mail Boots
+	{ itemID = 29607, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Mail Gauntlets
+	{ itemID = 16483, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Plate Boots
+	{ itemID = 16484, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Plate Gauntlets
+	{ itemID = 17607, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Satin Sandals
+	{ itemID = 17608, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Satin Gloves
+	{ itemID = 16437, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Silk Footwraps
+	{ itemID = 16440, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Marshal's Silk Gloves
+	{ itemID = 20214, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Mindfang
+	{ itemID = 22673, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Outrider's Chain Leggings
+	{ itemID = 30498, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Outrider's Lamellar Legguards
+	{ itemID = 22676, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Outrider's Mail Leggings
+	{ itemID = 22740, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Outrider's Leather Pants
+	{ itemID = 22741, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Outrider's Lizardhide Pants
+	{ itemID = 22651, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Outrider's Plate Legguards
+	{ itemID = 22747, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Outrider's Silk Leggings
+	{ itemID = 20070, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Sageclaw
+	{ itemID = 22748, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Sentinel's Chain Leggings
+	{ itemID = 22753, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Sentinel's Lamellar Legguards
+	{ itemID = 22749, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Sentinel's Leather Pants
+	{ itemID = 22750, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Sentinel's Lizardhide Pants
+	{ itemID = 30497, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Sentinel's Mail Leggings
+	{ itemID = 22672, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Sentinel's Plate Legguards
+	{ itemID = 22752, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Sentinel's Silk Leggings
+	{ itemID = 16536, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Warlord's Silk Amice
+	{ itemID = 16568, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Warlord's Chain Shoulders
+	{ itemID = 16551, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Warlord's Dragonhide Epaulets
+	{ itemID = 17590, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Warlord's Dreadweave Mantle
+	{ itemID = 29617, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Warlord's Lamellar Pauldrons
+	{ itemID = 16562, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Warlord's Leather Spaulders
+	{ itemID = 16580, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Warlord's Mail Spaulders
+	{ itemID = 16544, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Warlord's Plate Shoulders
+	{ itemID = 17622, copper = 0,         honorPoints = 9000,           arenaPoints = 0},   -- Warlord's Satin Mantle
+	{ itemID = 28247, copper = 0,         honorPoints = 10000,          arenaPoints = 0},   -- Band of Dominance
+	{ itemID = 28246, copper = 0,         honorPoints = 10000,          arenaPoints = 0},   -- Band of Triumph
+	{ itemID = 33853, copper = 0,         honorPoints = 12000,          arenaPoints = 0},   -- Vindicator's Band of Dominance
+	{ itemID = 33918, copper = 0,         honorPoints = 12000,          arenaPoints = 0},   -- Vindicator's Band of Salvation
+	{ itemID = 33919, copper = 0,         honorPoints = 12000,          arenaPoints = 0},   -- Vindicator's Band of Triumph
+	{ itemID = 20069, copper = 0,         honorPoints = 16000,          arenaPoints = 0},   -- Ironbark Staff
+	{ itemID = 20220, copper = 0,         honorPoints = 16000,          arenaPoints = 0},   -- Ironbark Staff
 	-- Purples
 	{ itemID = 19581, copper = 0,         honorPoints = 500,           arenaPoints = 0},   -- Berserker Bracers
 	{ itemID = 19584, copper = 0,         honorPoints = 500,           arenaPoints = 0},   -- Windtalker's Wristguards
@@ -471,7 +806,6 @@ local VFLIST_ITEMS = {
 	{ itemID = 40585, copper = 68000000,  honorPoints = 0,             arenaPoints = 0},   -- Signet of the Kirin Tor
 	{ itemID = 40586, copper = 68000000,  honorPoints = 0,             arenaPoints = 0},   -- Band of the Kirin Tor
 	{ itemID = 44934, copper = 68000000,  honorPoints = 0,             arenaPoints = 0},   -- Loop of the Kirin Tor
-	
 
 	--Contains all infinite stock attunable gold items, and all attunable honor items up to 1,000 points per item.
 	--Missing more expensive honor items, arena items and other currencies
@@ -521,7 +855,7 @@ local function InitDB()
 	end
 end
 
-local VFLIST_DISCLAIMER_TEXT = "* Considers current forge power, gold from selling back the items and\nbuying from cheapest the vendor and no reputation discounts (up to 20%)."
+local VFLIST_DISCLAIMER_TEXT = "* Considers current forge power, gold from selling the items back, and\nbuying from the cheapest vendor with no reputation discounts (up to 20%)."
 local VFLIST_NAMES_TEXT = "Items Left"
 local VFLIST_FORGELEVEL = {"Attune", "Titanforge", "Warforge", "Lightforge"}
 
@@ -541,77 +875,6 @@ local function GetTitle(got,left)
 	end
 end
 
-local function BuildCurrencyArray(item)
-    local currencies = {}
-    local prestigeForgePower = GetCustomGameData(29, 1494) / 100
-    local forgeMult = {
-		1,
-        1 / ((1 + prestigeForgePower) * 0.05),
-        1 / ((1 + prestigeForgePower) * 0.007),
-        1 / ((1 + prestigeForgePower) * 0.001),
-    }
-    local mult = math.max(1,forgeMult[VendorForgeListDB.targetForge+1])
-    
-    if(item.copper ~= nil and item.copper > 0) then
-		local _, _, _, _, _, _, _, _, _, _, vendorPrice = GetItemInfo(item.itemID)
-        local copper = (item.copper-vendorPrice) * mult
-        --local gold = math.floor(copper / 10000)
-		--if(gold > 0) then
-		local gold = math.floor((copper / 10000) +0.5)
-		local silver = math.floor((copper / 100) +0.5) % 100
-		copper = copper % 100
-        copper = math.floor(copper + 0.5)
-        if(gold) then
-            table.insert(currencies, {
-                ['name'] = 'Gold',
-                ['icon'] = 'Interface/MoneyFrame/UI-GoldIcon',
-                ['amnt'] = gold
-            })
-		end
-		if (gold == 0) then
-			if(silver > 0) then
-				table.insert(currencies, {
-					['name'] = 'Silver',
-					['icon'] = 'Interface/MoneyFrame/UI-SilverIcon',
-					['amnt'] = silver
-				})
-			elseif(copper > 0) then
-				table.insert(currencies, {
-					['name'] = 'Copper',
-					['icon'] = 'Interface/MoneyFrame/UI-CopperIcon',
-					['amnt'] = copper
-				})
-			end
-		end
-    end
-    
-        
-    if(item.honorPoints > 0) then
-        if(honorIcon == nil) then
-            if(UnitFactionGroup('player') == 'Alliance') then
-                honorIcon = 'Interface/PVPFrame/PVP-Currency-Alliance'
-            else
-                honorIcon = 'Interface/PVPFrame/PVP-Currency-Horde'
-            end
-        end
-        table.insert(currencies, {
-            ['name'] = 'Honor Points',
-            ['icon'] = honorIcon,
-            ['amnt'] = math.floor((item.honorPoints * mult) + 0.5)
-        })
-    end
-    if(item.arenaPoints > 0) then
-        table.insert(currencies, {
-            ['name'] = 'Arena Points',
-            ['icon'] = 'Interface/PVPFrame/PVP-ArenaPoints-Icon',
-            ['amnt'] = math.floor((item.arenaPoints * mult) + 0.5)
-        })
-    end
-
-    
-    return currencies
-end
-
 
 -- Filter function
 
@@ -625,7 +888,7 @@ local function FilterList(items)
         local currencies = BuildCurrencyArray(item)
         for _, cur in ipairs(currencies) do
             local th = VendorForgeListDB and VendorForgeListDB.thresholds and VendorForgeListDB.thresholds[VendorForgeListDB.targetForge+1] and VendorForgeListDB.thresholds[VendorForgeListDB.targetForge+1][cur.name]
-			if th and tonumber(th) and cur.amnt > tonumber(th) then
+            if th and tonumber(th) and cur.amnt > tonumber(th) then
                 ok = false
                 break
             end
@@ -685,7 +948,7 @@ local function GetEntryLink(entry)
     end
 end
 
-local function AddSeparators(n)
+function AddSeparators(n)
     local str = tostring(n)
     local sign, int, frac = string.match(str, "([%+%-]?)(%d+)(%.?%d*)")
 
@@ -700,7 +963,92 @@ local function AddSeparators(n)
     return sign .. int .. frac
 end
 
+function BuildCurrencyArray(item)
+    local currencies = {}
+    -- Get forge power bonus (e.g., 78.595 for 78.595%)
+    local prestigeForgePower = GetCustomGameData(29, 1494) / 100
+    
+    -- Base forge chances
+    local baseTitanChance = 0.05   -- 5%
+    local baseWarChance = 0.007    -- 0.7%
+    local baseLightChance = 0.001  -- 0.1%
+    
+    -- Apply forge power modifier to the chances
+    local modifiedTitanChance = baseTitanChance * (1 + prestigeForgePower)
+    local modifiedWarChance = baseWarChance * (1 + prestigeForgePower)
+    local modifiedLightChance = baseLightChance * (1 + prestigeForgePower)
+    
+    -- Calculate multipliers based on modified chances
+    local forgeMult = {
+        1,  -- No forge (index 1)
+        1 / modifiedTitanChance,   -- Titanforged (index 2)
+        1 / modifiedWarChance,      -- Warforged (index 3)
+        1 / modifiedLightChance,    -- Lightforged (index 4)
+    }
+    local mult = math.max(1, forgeMult[VendorForgeListDB.targetForge+1])
+    
+    if(item.copper ~= nil and item.copper > 0) then
+		local _, _, _, _, _, _, _, _, _, _, vendorPrice = GetItemInfo(item.itemID)
+		if not vendorPrice then
+			vendorPrice = 0
+		end
+        local copper = (item.copper-vendorPrice) * mult
+        --local gold = math.floor(copper / 10000)
+		--if(gold > 0) then
+		local gold = math.floor((copper / 10000) +0.5)
+		local silver = math.floor((copper / 100) +0.5) % 100
+		copper = copper % 100
+        copper = math.floor(copper + 0.5)
+        if(gold) then
+            table.insert(currencies, {
+                ['name'] = 'Gold',
+                ['icon'] = 'Interface/MoneyFrame/UI-GoldIcon',
+                ['amnt'] = gold
+            })
+		end
+		if (gold == 0) then
+			if(silver > 0) then
+				table.insert(currencies, {
+					['name'] = 'Silver',
+					['icon'] = 'Interface/MoneyFrame/UI-SilverIcon',
+					['amnt'] = silver
+				})
+			elseif(copper > 0) then
+				table.insert(currencies, {
+					['name'] = 'Copper',
+					['icon'] = 'Interface/MoneyFrame/UI-CopperIcon',
+					['amnt'] = copper
+				})
+			end
+		end
+    end
+    
+        
+    if(item.honorPoints > 0) then
+        if(honorIcon == nil) then
+            if(UnitFactionGroup('player') == 'Alliance') then
+                honorIcon = 'Interface/PVPFrame/PVP-Currency-Alliance'
+            else
+                honorIcon = 'Interface/PVPFrame/PVP-Currency-Horde'
+            end
+        end
+        table.insert(currencies, {
+            ['name'] = 'Honor Points',
+            ['icon'] = honorIcon,
+            ['amnt'] = math.floor((item.honorPoints * mult) + 0.5)
+        })
+    end
+    if(item.arenaPoints > 0) then
+        table.insert(currencies, {
+            ['name'] = 'Arena Points',
+            ['icon'] = 'Interface/PVPFrame/PVP-ArenaPoints-Icon',
+            ['amnt'] = math.floor((item.arenaPoints * mult) + 0.5)
+        })
+    end
 
+    
+    return currencies
+end
 
 ------------------------------------------------------------
 -- 3) UI
@@ -855,6 +1203,25 @@ local function CreateListFrame()
 		local offset = FauxScrollFrame_GetOffset(scroll)
 		--f.title:SetText(GetCounterText() .. " (" .. #VFLIST_GOTTEN .. "/" .. #VFLIST_FILTERED+#VFLIST_GOTTEN .. ")")
 		f.title:SetText(GetTitle(#VFLIST_GOTTEN,#VFLIST_FILTERED))
+
+		-- Sum costs of unfinished items only and update the total labels
+		if f.totalLines then
+			local totals = {}
+			for _, item in ipairs(VFLIST_FILTERED) do
+				local currencies = BuildCurrencyArray(item)
+				for _, cur in ipairs(currencies) do
+					if cur.name == "Gold" or cur.name == "Honor Points" or cur.name == "Arena Points" then
+						totals[cur.name] = (totals[cur.name] or 0) + cur.amnt
+					end
+				end
+			end
+			for cname, entry in pairs(f.totalLines) do
+				local v = totals[cname] or 0
+				local iconStr = (entry.icon ~= "") and (" |T" .. entry.icon .. ":0|t") or ""
+				entry.fs:SetText(AddSeparators(v) .. iconStr)
+			end
+		end
+
 		for i = 1, VISIBLE_ROWS do
 			local index = i + offset
 			local row = VFL_Rows[i]
@@ -993,8 +1360,6 @@ local function CreateListFrame()
         if VFL_UpdateList then VFL_UpdateList() end
     end)
 	
-	
-	
     -- Helper: collect all currency names seen across items
     local function CollectCurrencyNames()
         local set = {}
@@ -1076,6 +1441,45 @@ local function CreateListFrame()
 		border:SetFrameLevel(eb:GetFrameLevel() - 1)
 		
 		opt.boxes[cname] = eb
+	end
+	
+	-- Estimated totals for unfinished items
+	local totalLabelFrame = CreateFrame("Frame", nil, opt)
+	totalLabelFrame:SetSize(opt:GetWidth()-20, 20)
+	totalLabelFrame:SetPoint("TOPLEFT", labelFrame, "BOTTOMLEFT", 0, -(#CollectCurrencyNames() * 28) - 10)
+
+	local TOTAL_LABEL = totalLabelFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+	TOTAL_LABEL:SetPoint("TOPLEFT", totalLabelFrame, "TOPLEFT", 0, 0)
+	TOTAL_LABEL:SetTextColor(1, 0.82, 0)  -- gold, matches GameFontNormal
+	TOTAL_LABEL:SetText("Estimated totals (remaining):")
+
+	f.totalLines = {}
+	for i, cname in ipairs(CollectCurrencyNames()) do
+		local row = CreateFrame("Frame", nil, opt)
+		row:SetSize(opt:GetWidth()-20, 20)
+		row:SetPoint("TOPLEFT", totalLabelFrame, "BOTTOMLEFT", 0, -(i-1) * 20)
+
+		local lbl = row:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+		lbl:SetPoint("LEFT", row, "LEFT", 2, 0)
+		lbl:SetText(cname .. ":")
+		lbl:SetWidth(100)
+		lbl:SetJustifyH("LEFT")
+
+		local val = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+		val:SetPoint("LEFT", row, "LEFT", 100, 0)
+		val:SetText("—")
+		val:SetJustifyH("LEFT")
+
+		-- Store the icon too so the total line can append it
+		local iconPath = ""
+		if cname == "Gold" then
+			iconPath = "Interface/MoneyFrame/UI-GoldIcon"
+		elseif cname == "Honor Points" then
+			iconPath = honorIcon or "Interface/PVPFrame/PVP-Currency-Alliance"
+		elseif cname == "Arena Points" then
+			iconPath = "Interface/PVPFrame/PVP-ArenaPoints-Icon"
+		end
+		f.totalLines[cname] = { fs = val, icon = iconPath }
 	end
 	
     -- Apply button
@@ -1193,7 +1597,6 @@ end
 ------------------------------------------------------------
 SLASH_VENDORFORGELIST1 = "/vfl"
 SlashCmdList["VENDORFORGELIST"] = function(msg)
-
     if VFL_Frame:IsShown() then
         VFL_Frame:Hide()
     else
@@ -1211,16 +1614,13 @@ local function ForceCacheAllItems()
     for _, e in ipairs(VFLIST_ITEMS) do
         local idOrName = e.itemID or e.name
         if idOrName then
-            local name = GetItemInfo(idOrName)
-            if not name then
-                --GetItemInfo(idOrName) -- request load
-                queryAllScanTooltip:SetHyperlink("item:"..idOrName..":0:0:0:0:0:0:0")
-				GetItemInfo(idOrName) -- request load
-            end
+            -- Force cache by setting hyperlink first
+            queryAllScanTooltip:SetHyperlink("item:"..idOrName..":0:0:0:0:0:0:0")
+            -- Then try to get item info
+            GetItemInfo(idOrName)
         end
     end
 end
-
 
 local init = CreateFrame("Frame")
 init:RegisterEvent("ADDON_LOADED")
